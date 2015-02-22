@@ -1,6 +1,6 @@
-# Project Euler, with Elixir
+# [Project Euler](https://projecteuler.net/), with [Elixir](http://elixir-lang.org/)
 
-### [Multiples of 3 or 5 below 1000](https://projecteuler.net/problem=1)
+#### [Multiples of 3 or 5 below 1000](https://projecteuler.net/problem=1)
 
 ```
 sum = Enum.sum Enum.filter(
