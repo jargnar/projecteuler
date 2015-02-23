@@ -7,4 +7,5 @@
 ### Solutions
 
 1. [Multiples of 3 and 5](001/README.md)
-2. Even Fibonacci numbers
+2. [Even Fibonacci numbers](002/README.md)
+3. Largest prime factor
