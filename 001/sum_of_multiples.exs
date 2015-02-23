@@ -6,6 +6,16 @@ sum1 = Enum.sum Enum.filter(
     fn(x) -> rem(x, 3) == 0 or rem(x, 5) == 0 end
   )
 
+
+###########################################
+# Using Enums, Fn Capturing and Pipes     #
+###########################################
+divs3or5? = &(rem(&1, 3) == 0 or rem(&1, 5) == 0)
+sum2 = 1..999
+  |> Enum.filter(divs3or5?)
+  |> Enum.sum
+
+
 ############################################
 # Using h|t pattern matching and recursion #
 ############################################
@@ -22,15 +32,7 @@ defmodule Multiples do
   end
 end
 
-sum2 = Multiples.sum Enum.to_list 1..999
-
-###########################################
-# Using Enums, Fn Capturing and Pipes     #
-###########################################
-divs3or5? = &(rem(&1, 3) == 0 or rem(&1, 5) == 0)
-sum3 = 1..999
-  |> Enum.filter(divs3or5?)
-  |> Enum.sum
+sum3 = Multiples.sum Enum.to_list 1..999
 
 
 # How do I better check if all the sums are equal?
