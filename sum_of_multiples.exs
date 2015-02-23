@@ -4,7 +4,7 @@ sum = Enum.sum Enum.filter(
     fn(x) -> rem(x, 3) == 0 or rem(x, 5) == 0 end
   )
 
-# Using some elixir h|t pattern matching
+# Using h|t pattern matching and recursion
 defmodule Multiples do
   def sum([]) do
     0

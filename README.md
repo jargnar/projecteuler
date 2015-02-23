@@ -6,6 +6,8 @@
 
 #### [Multiples of 3 or 5 below 1000](https://projecteuler.net/problem=1)
 
+Approach 1: Using Enums
+
 ```
 sum = Enum.sum Enum.filter(
     Enum.to_list(1..999),
@@ -14,4 +16,18 @@ sum = Enum.sum Enum.filter(
 IO.puts sum
 ```
 
-(TODO: Try the same problem with a different approach.)
+Approach 2: Using h|t pattern matching & recursion
+```
+defmodule Multiples do
+  def sum([]) do
+    0
+  end
+  def sum([h|t]) do
+    if rem(h, 3) == 0 or rem(h, 5) == 0 do
+      h + sum(t)
+    else
+      sum(t)
+    end
+  end
+end
+```
