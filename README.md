@@ -9,4 +9,5 @@
 1. [Multiples of 3 and 5](001)
 2. [Even Fibonacci numbers](002)
 3. [Largest prime factor](003)
-4. Largest palindrome product
+4. [Largest palindrome product](004)
+5. Smallest multiple
