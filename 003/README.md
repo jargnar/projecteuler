@@ -10,4 +10,21 @@ What is the largest prime factor of the number 600851475143 ?
 
 #### Solution
 
-TODO
+Good old recursion. I wonder if there's a better way...
+
+```
+defmodule Factorizer do
+    def factorize(1, i) do
+        []
+    end
+    def factorize(n, i) do
+        if rem(n, i) == 0 do
+            [i] ++ factorize(div(n, i), i)
+        else
+            factorize(n, i + 1)
+        end
+    end
+end
+
+Factorizer.factorize(600851475143, 2) |> Enum.max
+```
