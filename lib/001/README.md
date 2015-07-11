@@ -34,15 +34,9 @@ IO.puts sum
 Approach 3: Using h|t pattern matching & recursion
 ```
 defmodule Multiples do
-  def sum([]) do
-    0
-  end
+  def sum([]), do: 0
   def sum([h|t]) do
-    if rem(h, 3) == 0 or rem(h, 5) == 0 do
-      h + sum(t)
-    else
-      sum(t)
-    end
+    if rem(h, 3) == 0 or rem(h, 5) == 0, do: h + sum(t), else: sum(t)
   end
 end
 
