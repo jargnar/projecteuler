@@ -1,13 +1,7 @@
 defmodule Factorizer do
-  def factorize(1, i) do
-    []
-  end
+  def factorize(1, _), do: []
   def factorize(n, i) do
-    if rem(n, i) == 0 do
-      [i] ++ factorize(div(n, i), i)
-    else
-      factorize(n, i + 1)
-    end
+    if rem(n, i) == 0, do: [i] ++ factorize(div(n, i), i), else: factorize(n, i + 1)
   end
 end
 
