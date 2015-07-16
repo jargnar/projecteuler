@@ -11,4 +11,5 @@
 3. [Largest prime factor](lib/003)
 4. [Largest palindrome product](lib/004)
 5. [Smallest multiple](lib/005)
-6. Sum square difference
+6. [Sum square difference](lib/006)
+7. 10001st prime
