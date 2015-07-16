@@ -10,4 +10,5 @@
 2. [Even Fibonacci numbers](lib/002)
 3. [Largest prime factor](lib/003)
 4. [Largest palindrome product](lib/004)
-5. Smallest multiple
+5. [Smallest multiple](lib/005)
+6. Sum square difference
