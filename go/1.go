@@ -12,7 +12,7 @@ func sumToN(a int, n int, d int) int {
 
 // calls sumToN with approppriate numbers
 func multipleSum(a int, lim int) int {
-	return sumToN(a, lim/a, a)
+	return sumToN(a, (lim-1)/a, a)
 }
 
 func main() {
