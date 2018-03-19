@@ -12,7 +12,8 @@ func sumOfMultiples(a int, lim int) int {
 	return (n / 2) * ((2 * a) + (n-1)*a)
 }
 
-func main() {
+// main function for this problem
+func multiples() {
 	var sum int
 	sum = sumOfMultiples(3, 1000) + sumOfMultiples(5, 1000) - sumOfMultiples(15, 1000)
 	fmt.Println(sum)
