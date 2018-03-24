@@ -6,4 +6,5 @@ func main() {
 	largestPrimeFactor() // 3
 	palindromeProduct()  // 4
 	lcm()                // 5
+	sumSquareDiff()      // 6
 }
