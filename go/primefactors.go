@@ -1034,9 +1034,11 @@ func primefactors(n int) ([]int, error) {
 
 	// if N is still gt than 1, we can check if it is prime
 	// if not, N has factors gt than the 10000th prime, and this code will fail
-	if n > 1 && big.NewInt(int64(n)).ProbablyPrime(42) {
+	var isNPrime = big.NewInt(int64(n)).ProbablyPrime(42)
+
+	if n > 1 && isNPrime {
 		factors = append(factors, n)
-	} else {
+	} else if n > 1 && !isNPrime {
 		return factors, errors.New("a prime factor greater than 104729 was found")
 	}
 
