@@ -5,4 +5,5 @@ func main() {
 	fibo()               // 2
 	largestPrimeFactor() // 3
 	palindromeProduct()  // 4
+	lcm()                // 5
 }
