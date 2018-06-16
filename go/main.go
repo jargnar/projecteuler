@@ -7,4 +7,5 @@ func main() {
 	palindromeProduct()  // 4
 	lcm()                // 5
 	sumSquareDiff()      // 6
+	nthprime()           // 7
 }
