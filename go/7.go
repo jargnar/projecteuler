@@ -14,11 +14,13 @@ func nthprime() {
 	}
 
 	counter := 0
+loop:
 	for i := 2; i <= lim; i++ {
 		if isPrime[i] == true {
 			counter = counter + 1
 			if counter == n {
 				println(i)
+				break loop
 			}
 			for j := i; j <= lim; j = j + i {
 				isPrime[j] = false
